@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://wallpaperaccess.com/full/1700233.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            background: rgb(30, 95, 194);
+            background-size: cover;
+            background-position: center;
+            background-attachment: flex;
+            padding: 20px;
+            top: 300px;
+            margin-top: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .rent-out {
+        position: fixed;
+        top: 200px;
+        right: 20px;
+        background: rgba(255, 87, 34, 0.9);
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        animation: pulse 1.5s infinite alternate;
+        z-index: 1000; /* Ensures it's always visible */
+    }
+
+    .rent-link {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .rent-out:hover {
+        background: rgba(255, 61, 0, 1);
+        transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.5);
+        }
+        100% {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 61, 0, 0.8);
+        }
+    }
+    .rent-in {
+        position: fixed;
+        top: 200px;
+        left: 20px;
+        background: rgba(255, 87, 34, 0.9);
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        animation: addi 1.5s infinite alternate;
+        z-index: 1000; /* Ensures it's always visible */
+    }
+
+    .rent-on {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .rent-in:hover {
+        background: rgba(255, 61, 0, 1);
+        transform: scale(1.1);
+    }
+
+    @keyframes addi {
+        0% {
+            transform: scale(1);
+            box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.5);
+        }
+        100% {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 61, 0, 0.8);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Info Page</h2>
+        <p>This is a protected page that only logged-in users can access.</p>
+        <p><a href="/"><button style="border-radius: 10px;">Go to home</button></a></p>
+        <p><a href="/logout"><button style="border-radius: 10px;">Logout</button></a></p>
+    </div>
+    <div class="rent-out">
+        <a href="rentout" class="rent-link">🏠 Click Here If You Want to Rent Out Your House</a>
+    </div>
+    <div class="rent-in">
+        <a href="/rentsearch" class="rent-on">🏠 Click Here If You Want to Rent house</a>
+
+    </div>
+    
+</body>
+</html>

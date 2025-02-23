@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Hunter</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://wallpaperaccess.com/full/1700233.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: black;
+            padding-top: 20px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        nav {
+            background: rgba(17, 12, 12, 0.7);
+            padding: 10px;
+            padding-right: 2px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        nav a {
+            color: rgb(250, 255, 255);
+            text-decoration: none;
+            font-size: 15px;
+            padding: 10px 5px;
+        }
+
+        nav a:hover {
+            color: rgb(144, 170, 96);
+        }
+
+        .menu {
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            margin-top: 20px;
+            height: 70vh;
+            
+        }
+
+        /* Offer Form */
+        .offer-container {
+            width: 20%;
+            background: rgba(255, 223, 186, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position:fixed;
+            left: 40%;
+            top: 75%;
+            transform: translateY(-50%);
+        }
+
+        .offer-container h2 {
+            text-align: center;
+            color: #d35400;
+        }
+
+        .offer-container input, .offer-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .offer-container button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .offer-container button:hover {
+            background-color: #d35400;
+        }
+
+        /* Scrolling Content Box */
+        .scrolling-box {
+            width: 30%;
+            height: 300px; /* Fixed height for the scrolling content */
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 60%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scrolling-content {
+            display: inline-block;
+            animation: scrollUp 10s linear infinite;
+        }
+
+        @keyframes scrollUp {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset style="background:url('https://images.alphacoders.com/597/thumb-1920-597501.jpg'); border-radius: 10px; border-color: black; width: 2000px;">
+        <h1>🏡 HOUSE HUNTER</h1>
+    </fieldset>
+
+    <nav>
+        <a href="/home">🏠 Home</a>
+        <a href="/about">About</a>
+        <a href="/service">Services</a>
+        <a href="/contact">Contact</a>
+        <fieldset>
+        <a href="/login">login</a>
+        <a href="/register">Register</a></fieldset>
+        
+        
+    </nav>
+
+    <div class="container">
+
+        <!-- Offer Form Below Search Form -->
+        <div class="offer-container">
+            <h2>Exclusive Offers! 🎉</h2>
+            <p>Get **10% off** on your first rental booking!</p>
+            <p>Subscribe to our newsletter for **early access** to the best deals.</p>
+            <input type="email" placeholder="Enter Your Email" required>
+            <button type="submit">Subscribe Now</button>
+        </div>
+
+        <!-- Scrolling Content on the Right -->
+        <div class="scrolling-box">
+            <div class="scrolling-content">
+                <h4 style="color: red;">🏡 Welcome to House Hunter – Your Smart Rental Solution!</h4><br>
+                Finding a rental home has never been easier! House Hunter is a one-stop digital platform designed to simplify the house-hunting experience for tenants and property owners alike. <br><br>
+                Whether you’re searching for a cozy apartment, a spacious family home, or a commercial space, we bring the best rental properties to your fingertips. <br><br>
+                With our user-friendly interface, advanced search filters, and secure online payment system, you can browse properties, compare prices, make payments, and maintain transaction records with ease. <br><br>
+                Say goodbye to endless property visits and manual searches – House Hunter makes renting a hassle-free experience!  
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

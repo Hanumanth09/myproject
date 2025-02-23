@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Home Hunter</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rebeccapurple;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: url('https://www.blackburnejackson.com.au/wp-content/uploads/2018/05/BackHouse.jpg');
+            color: aliceblue;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-size: 17px;
+        }
+        .content {
+            padding: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h3, p {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        h3 { animation-delay: 0.3s; }
+        p { animation-delay: 0.5s; }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .back-button {
+            background-color: rgb(240, 22, 15);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out 1s forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h3>~Abstract</h3>
+        <p>House Hunter is a rental house search system that allows users to search for rental houses, view 
+details, make payments, and maintain records of rental transactions. The system provides an 
+easy-to-use interface built using HTML and CSS for frontend development and MySQL files 
+as a lightweight database...</p>
+        
+        <h3>~Introduction</h3>
+        <p>Finding a suitable rental property can be a time-consuming and tedious process. Traditional 
+methods involve manually searching through listings, contacting owners, and handling 
+payments offline, which can be inefficient...</p>
+        
+        <h3>~Motivation</h3>
+        <p>The increasing demand for rental properties and the need for a simplified rental process have 
+driven the development of this project. Many rental seekers face difficulties in finding suitable 
+houses due to scattered information and lack of centralized platforms...</p>
+        
+        <a href="/" class="back-button">BACK</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Hunter</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/270/633/106/modern-king-size-bedroom-wallpaper-preview.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .content {
+            padding: 50px;
+            color: rgb(3, 3, 3);
+        }
+        h1, h2, h3, p {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        h1 { animation-delay: 0.2s; }
+        h2 { animation-delay: 0.4s; }
+        h3 { animation-delay: 0.6s; }
+        p { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>Home Hunter is a real estate platform designed to help users find their perfect home, whether for rent or purchase. The platform connects buyers, renters, and property owners, providing a seamless property search experience with advanced filters, virtual tours, and market insights.</p>
+        
+        <h1>Services Provided</h1>
+        
+        <h3>1. Property Listings</h3>
+        <p>* Displays available homes, apartments, and commercial properties for sale or rent.<br>* Includes high-quality images, descriptions, and pricing details.</p>
+        
+        <h3>2. Advanced Search & Filters</h3>
+        <p>* Allows users to filter properties based on location, budget, size, type, and amenities.<br>* Provides an interactive map view for better location-based searches.</p>
+        
+        <h3>3. Virtual Tours & Images</h3>
+        <p>* Offers 360° virtual tours and video walkthroughs for an immersive property experience.<br>* Provides multiple images from different angles for better visualization.</p>
+        
+        <h3>4. Contact Property Owners & Agents</h3>
+        <p>* Enables direct messaging or call options to connect with property owners and real estate agents.<br>* Includes verified contact details for transparency.</p>
+        
+        <h3>5. Price Comparison & Market Insights</h3>
+        <p>* Compares similar properties in the same area to help users make informed decisions.<br>* Provides real-time market trends, price fluctuations, and investment opportunities.</p>
+        
+        <h3>6. Loan & Mortgage Calculator</h3>
+        <p>* Helps users estimate loan eligibility, monthly mortgage payments, and total interest costs.<br>* Provides guidance on financial planning for property purchases.</p>
+        
+        <h3>7. User Reviews & Ratings</h3>
+        <p>* Allows buyers and renters to rate properties and agents based on their experiences.<br>* Helps new users make better decisions with genuine reviews.</p>
+        
+        <h3>8. Saved Listings & Alerts</h3>
+        <p>* Users can save favorite properties for future reference.<br>* Sends notifications for new listings, price drops, and changes in saved properties.</p>
+        
+        <h3>9. Neighborhood Insights</h3>
+        <p>* Provides details on nearby schools, hospitals, transportation, crime rates, and lifestyle amenities.<br>* Helps users choose a property based on the surrounding environment.</p>
+        
+        <h3>10. Secure Transactions & Legal Support</h3>
+        <p>* Ensures secure and verified property transactions.<br>* Provides basic legal guidance for rental agreements, purchases, and registrations.</p>
+    </div>
+    <a href="/home" ><button style="background: red; border-radius: 8px; margin-left: 800px; padding: 10px;">HOME</button></a>
+</body>
+</html>
